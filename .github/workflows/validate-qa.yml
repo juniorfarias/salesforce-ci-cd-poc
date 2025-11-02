@@ -1,0 +1,31 @@
+name: Validate QA (Scratch Org)
+
+on:
+  push:
+    branches: [ qa ]
+  pull_request:
+    branches: [ qa ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout source
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Install Salesforce CLI
+      - name: Install Salesforce CLI
+        uses: salesforcecli/action@v2
+        with:
+          cli: sf
+
+      # 3️⃣ Authenticate Dev Hub (your DE org)
+      - name: Authenticate to Dev Hub
+        run: |
+          echo "${{ secrets.JWT_KEY }}" > assets/server.key
+          sf org login jwt \
+            --username ${{ secrets.SF_USERNAME }} \
+            --client-id ${{ secrets.CONSUMER_KEY }} \

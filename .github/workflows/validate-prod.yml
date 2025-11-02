@@ -1,0 +1,40 @@
+name: Validate Production (Developer Edition)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Salesforce CLI
+        uses: salesforcecli/action@v2
+        with:
+          cli: sf
+
+      - name: Authenticate to Production (Developer Edition)
+        run: |
+          echo "${{ secrets.JWT_KEY }}" > assets/server.key
+          sf org login jwt \
+            --username ${{ secrets.SF_PROD_USERNAME }} \
+            --client-id ${{ secrets.PROD_CONSUMER_KEY }} \
+            --jwt-key-file assets/server.key \
+            --instance-url https://login.salesforce.com \
+            --alias Prod
+
+      - name: Validate Deployment in Production
+        run: |
+          sf project deploy start \
+            --target-org Prod \
+            --manifest manifest/package.xml \
+            --check-only \
+            --test-level RunLocalTests \
+            --verbose
