@@ -12,20 +12,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout source
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Install Salesforce CLI
+      # ✅ Install Salesforce CLI correctly
       - name: Install Salesforce CLI
-        uses: salesforcecli/github-action@v2
-        with:
-          cli: sf
+        uses: amtrack/sfdx-cli-action@v1
 
-      # 3️⃣ Authenticate Dev Hub (your DE org)
       - name: Authenticate to Dev Hub
         run: |
           echo "${{ secrets.JWT_KEY }}" > assets/server.key
-          sf org login jwt \
+          sfdx auth:jwt:grant \
             --username ${{ secrets.SF_USERNAME }} \
-            --client-id ${{ secrets.CONSUMER_KEY }} \
+            --clientid ${{ secrets.CONSUMER_KEY }} \
+            --jwtkeyfile assets/server.key \
+            --instanceurl ${{ secrets.SF_INSTANCE_URL }} \
+            -a DevHub
+
+      - name: Set default org
+        run: sfdx force:config:set defaultdevhubusername=DevHub
+
+      - name: Validate deployment in QA
+        run: |
+          sfdx force:source:deploy -u QAJJ --checkonly --testlevel RunLocalTests --verbose
