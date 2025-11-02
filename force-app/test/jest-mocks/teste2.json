@@ -1,0 +1,27 @@
+{
+  "title": "Friends Learning Together – Part 1",
+  "voices": {
+    "Emma": "female",
+    "Tom": "male"
+  },
+  "metadata": {
+    "accent": "American",
+    "music_intro_url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/It_s_time_for_adventure/Komiku_-_01_-_Friends.mp3"
+  },
+  "script": [
+    {"speaker": "MUSIC", "text": "[MUSIC: intro – soft background starts]"},
+    {"speaker": "Emma", "text": "Hey, Tom! What’s up?"},
+    {"speaker": "Tom", "text": "Hey, Emma! I’m good. I was just studying some basic English verbs."},
+    {"speaker": "Emma", "text": "Oh really? Which ones?"},
+    {"speaker": "Tom", "text": "Simple ones, but super useful — to need, to speak, to eat, and to drink."},
+    {"speaker": "Emma", "text": "Nice! You can say a lot with just those."},
+    {"speaker": "Tom", "text": "Yeah. For example, I need to drink coffee every morning."},
+    {"speaker": "Emma", "text": "Haha, same here! I can’t even speak before coffee."},
+    {"speaker": "Tom", "text": "That’s funny because it fits perfectly — I need coffee before I speak!"},
+    {"speaker": "Emma", "text": "Totally. And I eat breakfast with my family every day."},
+    {"speaker": "Tom", "text": "That’s cool. Let’s start with to need. What does it really mean to you?"},
+    {"speaker": "Emma", "text": "It’s when something is important or necessary. Like, I need to study English."},
+    {"speaker": "Tom", "text": "Or I need water. Easy, but very useful."},
+    {"speaker": "Emma", "text": "Yeah, you can use it in many ways — I need help. I need time. I need to sleep."}
+  ]
+}

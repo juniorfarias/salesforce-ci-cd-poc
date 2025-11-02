@@ -1,0 +1,74 @@
+{
+  "title": "Friends Learning Together – Basic English Conversation",
+  "language": "en-US",
+  "voices": {
+    "Emma": "female",
+    "Tom": "male"
+  },
+  "metadata": {
+    "duration_estimate": "5 minutes",
+    "accent": "American",
+    "style": "friendly, conversational",
+    "background_music": [
+      {
+        "cue": "intro",
+        "description": "Soft uplifting acoustic intro music fades in",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/It_s_time_for_adventure/Komiku_-_01_-_Friends.mp3"
+      },
+      {
+        "cue": "outro",
+        "description": "Soft acoustic outro music fades out",
+        "url": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/It_s_time_for_adventure/Komiku_-_13_-_See_you_soon.mp3"
+      }
+    ]
+  },
+  "script": [
+    {"speaker": "MUSIC", "text": "[MUSIC: intro – soft background starts]"},
+    {"speaker": "Emma", "text": "Hey, Tom! What’s up?"},
+    {"speaker": "Tom", "text": "Hey, Emma! I’m good. I was just studying some basic English verbs."},
+    {"speaker": "Emma", "text": "Oh really? Which ones?"},
+    {"speaker": "Tom", "text": "Simple ones, but super useful — to need, to speak, to eat, and to drink."},
+    {"speaker": "Emma", "text": "Nice! You can say a lot with just those."},
+    {"speaker": "Tom", "text": "Yeah. For example, I need to drink coffee every morning."},
+    {"speaker": "Emma", "text": "Haha, same here! I can’t even speak before coffee."},
+    {"speaker": "Tom", "text": "That’s funny because it fits perfectly — I need coffee before I speak!"},
+    {"speaker": "Emma", "text": "Totally. And I eat breakfast with my family every day."},
+    {"speaker": "Tom", "text": "That’s cool. Let’s start with to need. What does it really mean to you?"},
+    {"speaker": "Emma", "text": "It’s when something is important or necessary. Like, I need to study English."},
+    {"speaker": "Tom", "text": "Or I need water. Easy, but very useful."},
+    {"speaker": "Emma", "text": "Yeah, you can use it in many ways — I need help. I need time. I need to sleep."},
+    {"speaker": "Tom", "text": "Exactly. And then we have to speak — it’s all about communication."},
+    {"speaker": "Emma", "text": "Right. For example, I speak English with my brother, or I speak Portuguese with my mom."},
+    {"speaker": "Tom", "text": "And when you want to ask someone, you can say, Do you speak English?"},
+    {"speaker": "Emma", "text": "That’s one of the first questions people learn when traveling."},
+    {"speaker": "Tom", "text": "Totally. Now, let’s move on to to eat and to drink."},
+    {"speaker": "Emma", "text": "For example, I eat fish and meat. I drink water and juice."},
+    {"speaker": "Tom", "text": "Or I drink coffee in the morning and water during the day."},
+    {"speaker": "Emma", "text": "And when you combine them with need, you get sentences like, I need to eat now, or I need to drink something."},
+    {"speaker": "Tom", "text": "See? It’s like building blocks. You start small, and suddenly you can express real things."},
+    {"speaker": "Emma", "text": "Yeah, and when you add family words, it gets even better — I need to speak with my mother today, or I drink coffee with my father."},
+    {"speaker": "Tom", "text": "True. These are simple but real-life sentences."},
+    {"speaker": "Emma", "text": "I like that learning this way feels natural. You’re already able to talk about your day — what you need, what you eat, what you drink, and who you talk to."},
+    {"speaker": "Tom", "text": "Exactly. It’s about communication, not memorizing rules."},
+    {"speaker": "Emma", "text": "Right. And don’t forget greetings — Good morning, Good afternoon, Good evening, Good night."},
+    {"speaker": "Tom", "text": "And, of course, Thank you and You’re welcome."},
+    {"speaker": "Emma", "text": "Haha, polite and classic."},
+    {"speaker": "Tom", "text": "Let’s try a little conversation using these words."},
+    {"speaker": "Emma", "text": "Sure, go ahead."},
+    {"speaker": "Tom", "text": "Good morning, Emma!"},
+    {"speaker": "Emma", "text": "Good morning, Tom! I need to drink coffee now."},
+    {"speaker": "Tom", "text": "Me too! I drink coffee and milk every morning."},
+    {"speaker": "Emma", "text": "Nice! I eat bread and fruit for breakfast."},
+    {"speaker": "Tom", "text": "I speak English with my brother, and I need to study more today."},
+    {"speaker": "Emma", "text": "Good job! I need to eat lunch now. I’m hungry!"},
+    {"speaker": "Tom", "text": "Haha, same here! Let’s go eat."},
+    {"speaker": "Emma", "text": "Thank you, Tom."},
+    {"speaker": "Tom", "text": "You’re welcome, Emma. See you later!"},
+    {"speaker": "MUSIC", "text": "[MUSIC: outro – soft acoustic fades out]"},
+    {"speaker": "Emma", "text": "That was fun!"},
+    {"speaker": "Tom", "text": "Yeah, simple words, but powerful sentences."},
+    {"speaker": "Emma", "text": "Keep practicing every day — small steps make big progress."},
+    {"speaker": "Tom", "text": "See you next time!"},
+    {"speaker": "Emma", "text": "Bye, everyone!"}
+  ]
+}
