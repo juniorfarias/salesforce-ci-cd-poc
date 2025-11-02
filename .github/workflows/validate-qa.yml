@@ -18,7 +18,7 @@ jobs:
 
       # 2️⃣ Install Salesforce CLI
       - name: Install Salesforce CLI
-        uses: salesforcecli/action@v2
+        uses: salesforcecli/github-action@v2
         with:
           cli: sf
 
