@@ -19,8 +19,10 @@ jobs:
       # 2️⃣ ✅ Install Salesforce CLI (modern way)
       - name: Install Salesforce CLI
         run: |
-          npm install @salesforce/cli --global
-          sf --version
+          wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+          mkdir sfdx-cli
+          tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
+          ./sfdx-cli/install
 
       # 3️⃣ Authenticate to Dev Hub
       - name: Authenticate to Dev Hub
