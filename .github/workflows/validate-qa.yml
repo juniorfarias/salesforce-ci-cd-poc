@@ -18,6 +18,7 @@ jobs:
 
       # 2️⃣ ✅ Install Salesforce CLI (modern way)
       - name: Install Salesforce CLI
+        run: |
           npm install --global @salesforce/cli
           sf version
 
