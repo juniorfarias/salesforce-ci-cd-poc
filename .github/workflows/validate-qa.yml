@@ -18,9 +18,8 @@ jobs:
 
       # 2️⃣ ✅ Install Salesforce CLI (modern way)
       - name: Install Salesforce CLI
-        uses: salesforcecli/github-action@v2
-        with:
-          version: latest
+          npm install --global @salesforce/cli
+          sf version
 
       # 3️⃣ Authenticate to Dev Hub
       - name: Authenticate to Dev Hub
